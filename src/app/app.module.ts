@@ -18,6 +18,10 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { TimerComponent } from './parent-child/timer/timer.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { OnChangesComponent } from './on-changes/on-changes.component';
+import { NamesChangeComponent } from './on-changes/names-change/names-change.component';
+import { InterceptingComponent } from './intercepting/intercepting.component';
+import { NameComponent } from './Intercepting/name/name.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     ItemClientComponent,
     ParentChildComponent,
     TimerComponent,
+    OnChangesComponent,
+    NamesChangeComponent,
+    InterceptingComponent,
+    NameComponent,
   ],
   imports: [
     BrowserModule,

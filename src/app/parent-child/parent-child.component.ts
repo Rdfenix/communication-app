@@ -1,15 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { TimerComponent } from './timer/timer.component';
 
 @Component({
   selector: 'app-parent-child',
   templateUrl: './parent-child.component.html',
-  styleUrls: ['./parent-child.component.css']
+  styleUrls: ['./parent-child.component.css'],
 })
 export class ParentChildComponent implements OnInit {
+  @ViewChild(TimerComponent)
+  private myTime: TimerComponent;
 
-  constructor() { }
+  @ViewChild('myPi')
+  private myPi: ElementRef;
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  start() {
+    this.myTime.start();
   }
 
+  stop() {
+    this.myTime.stop();
+  }
+
+  clear() {
+    this.myTime.clear();
+  }
+
+  ngAfterViewInit() {
+    console.log(this.myPi);
+  }
 }
