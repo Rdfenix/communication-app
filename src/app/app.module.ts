@@ -21,7 +21,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { OnChangesComponent } from './on-changes/on-changes.component';
 import { NamesChangeComponent } from './on-changes/names-change/names-change.component';
 import { InterceptingComponent } from './intercepting/intercepting.component';
-import { NameComponent } from './Intercepting/name/name.component';
+import { NameInternComponent } from './intercepting/name-intern/name-intern.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { NameComponent } from './Intercepting/name/name.component';
     OnChangesComponent,
     NamesChangeComponent,
     InterceptingComponent,
-    NameComponent,
+    NameInternComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterceptingComponent implements OnInit {
   name: string = '';
+
   constructor() {}
 
   ngOnInit(): void {}
